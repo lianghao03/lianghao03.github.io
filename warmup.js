@@ -7,6 +7,7 @@ var total= 0;
 	
 $.getJSON("stuff.json", function(data){
 	exerciseArray = data;
+	console.log(exerciseArray);
 });
 //For Enter key to add task
 
