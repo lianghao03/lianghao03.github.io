@@ -6,7 +6,7 @@ var total= 0;
 	var exerciseArray = [];
 	
 $.getJSON("stuff.json", function(data){
-	exerciseArray = data.hip[0];
+	exerciseArray = data.hip;
 	console.log(data.hip);
 	console.log(data.hip[0]);
 	console.log(exerciseArray)
@@ -34,8 +34,8 @@ $("#add").click(function(){
 
 function seeTask(){
 	var taskObj = {};
-	taskObj.warmup = exerciseArray[0].warmup;
-	console.log(exerciseArray[0].warmup);
+	/*taskObj.warmup = exerciseArray[0].warmup;
+	console.log(exerciseArray[0].warmup);*/
 }
 
 function addTask(){
