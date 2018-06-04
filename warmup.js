@@ -5,6 +5,7 @@ var total= 0;
 	var taskArray = [];
 	var exerciseArray = [];
 	
+	console.log("Start warmup");
 $.getJSON("stuff.json", function(data){
 	//exerciseArray = data.hip;
 	console.log("data");
@@ -15,12 +16,12 @@ $.getJSON("stuff.json", function(data){
 });
 //For Enter key to add task
 
- $("#task").keypress(function() {
+/* $("#task").keypress(function() {
   if (event.which == 13 ) {
  	event.preventDefault();
  	addTask();
   }
- });
+ });*/
 
 
 
@@ -37,7 +38,7 @@ function seeTask(){
 	/*taskObj.warmup = exerciseArray[0].warmup;
 	console.log(exerciseArray[0].warmup);*/
 }
-
+/*
 function addTask(){
 	var taskObj ={};
 	taskObj.name = $("#task").val();
@@ -72,5 +73,5 @@ function addTask(){
    		 });
 		}
 
-	}
+	}*/
 });
