@@ -3,9 +3,10 @@ $(document).ready(function() {
 var total= 0;
 	var index = 0;
 	var taskArray = [];
+	var exerciseArray = [];
 	
 $.getJSON("stuff.json", function(data){
-	console.log(data);
+	exerciseArray = data;
 });
 //For Enter key to add task
 
@@ -20,7 +21,17 @@ $.getJSON("stuff.json", function(data){
 
 $("#add").click(function(){
 	addTask();
+	seeTask();
+	
 });
+
+
+
+function seeTask(){
+	var taskObj = {};
+	taskObj.warmup = exerciseArray[0].warmup;
+	console.log(exerciseArray[0].warmup);
+}
 
 function addTask(){
 	var taskObj ={};
