@@ -30,7 +30,8 @@ var total= 0;
 					"exercise":"situps",
 					"reps":"20",
 					"sets":"3"
-				}}]];
+				}}
+		]];
 	
 $.getJSON("hip.json", function(data){
 	console.log(data);
