@@ -2,18 +2,12 @@ $(document).ready(function() {
 // JavaScript Document
 var total= 0;
 	var index = 0;
-	var taskArray = [];
 	var exerciseArray = [];
 	
-	console.log("Start warmup");
 $.getJSON("stuff.json", function(data){
-	//exerciseArray = data.hip;
-	console.log("data");
-	//console.log(data.hip[0]);
-	//console.log(exerciseArray)
-
-	//console.log(data.exercises[0]);
+	console.log(data);
 });
+console.log("Starting warmup");
 //For Enter key to add task
 
 /* $("#task").keypress(function() {
