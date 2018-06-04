@@ -6,7 +6,7 @@ var total= 0;
 	var exerciseArray = [];
 	
 $.getJSON("stuff.json", function(data){
-	exerciseArray = data.exercises;
+	exerciseArray = data.hip;
 
 	//console.log(data.exercises[0]);
 });
@@ -14,10 +14,10 @@ $.getJSON("stuff.json", function(data){
 
  $("#task").keypress(function() {
   if (event.which == 13 ) {
- event.preventDefault();
- addTask();
+ 	event.preventDefault();
+ 	addTask();
   }
-  });
+ });
 
 
 
@@ -31,7 +31,7 @@ $("#add").click(function(){
 
 function seeTask(){
 	var taskObj = {};
-	//taskObj.warmup = exerciseArray[0].warmup;
+	taskObj.warmup = exerciseArray[0].warmup;
 	console.log(exerciseArray[0].warmup);
 }
 
