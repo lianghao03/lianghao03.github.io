@@ -2,7 +2,35 @@ $(document).ready(function() {
 // JavaScript Document
 var total= 0;
 	var index = 0;
-	var exerciseArray = [];
+	var exerciseArray = [hip[{"day":"1",
+			"type":"speed",
+			"program":[
+				{
+					"exercise":"pull-ups",
+					"reps":"5",
+					"sets":"3",
+				},
+				{
+					"exercise":"situps",
+					"reps":"20",
+					"sets":"3"
+				}
+			]
+		},
+		{
+			"day":"2",
+			"type":"strength",
+			"program":[
+				{
+					"exercise":"pull-ups",
+					"reps":"12",
+					"sets":"5",
+				},
+				{
+					"exercise":"situps",
+					"reps":"20",
+					"sets":"3"
+				}}]];
 	
 $.getJSON("hip.json", function(data){
 	console.log(data);
@@ -29,8 +57,8 @@ $("#add").click(function(){
 
 function seeTask(){
 	var taskObj = {};
-	/*taskObj.warmup = exerciseArray[0].warmup;
-	console.log(exerciseArray[0].warmup);*/
+	taskObj.warmup = exerciseArray[0].warmup;
+	console.log(exerciseArray[0].warmup);
 }
 /*
 function addTask(){
