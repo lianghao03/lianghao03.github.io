@@ -1,0 +1,24 @@
+{
+	"exercises":[
+		{
+			"day":"speed",
+			"warmup":{
+				"run":"5min",
+				"sstretch":"3min",
+				"dstretch":"7min"
+			},
+			"drills":{
+				"drill1":{
+					"name":"single-leg cycles",
+					"reps":"20/leg",
+					"run":"20m"
+				},
+				"drill2":{
+					"name":"block starts",
+					"reps":"3",
+					"run":"30m"
+				}
+			}
+		}
+	]
+}

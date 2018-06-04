@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Warmup!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="warmup.js"></script>
+</head>
+
+<body>
+<div class="mainpage" data-role="page">
+	<div class="profile-head">
+		<h1>Warmup!</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	<form>
+		<fieldset data-role="ui-field-task">
+			<label for="task">Task:</label>
+				<input type="text" name="task" id="task">
+			</fieldset>
+<ul data-role="listview" data-inset="true" data-divider-theme="a">
+    <li data-role="list-divider">Warmup</li>
+    <li><a href="#">Static Stretch 3min</a></li>
+    <li><a href="#">Dynamic Stretch 12min</a></li>
+    <li data-role="list-divider">Drills</li>
+    <li><a href="#"></a></li>
+    <li><a href="#">Work</a></li>
+</ul>
+<fieldset data-role="ui-field-priority">
+<label for="select-warmup">Warmup</label>
+<select name="warmup" id="warmup">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+    </select>
+</fieldset>
+<fieldset data-role="ui-field-priority">
+<label for="select-drills">Drills</label>
+<select name="drills" id="drills">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+    </select>
+</fieldset>
+<fieldset data-role="ui-field-priority">
+<label for="select-workout">Workouts</label>
+<select name="workouts" id="workouts">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+    </select>
+</fieldset>
+
+
+    <input id="add" type="button" value="Add warmup">
+    </form>
+	    <table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
+	              <thead>
+	                <tr>
+	                  <th data-priority="1">No</th>
+	                  <th>Task</th>
+	                  <th data-priority="3">Priority</th>
+	                  <th data-priority="4">Done</th>
+	                </tr>
+	              </thead>
+	              <tbody class="tasktable">
+	              </tbody>
+
+	            </table>
+    </div>
+
+<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
