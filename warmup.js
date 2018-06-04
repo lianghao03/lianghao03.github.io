@@ -7,7 +7,7 @@ var total= 0;
 	
 $.getJSON("stuff.json", function(data){
 	exerciseArray = data;
-	console.log(data[0].day);
+	console.log(data[0]);
 });
 //For Enter key to add task
 
