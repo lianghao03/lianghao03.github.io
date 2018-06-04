@@ -7,7 +7,7 @@ var total= 0;
 	
 $.getJSON("stuff.json", function(data){
 	//exerciseArray = data.hip;
-	console.log(data.hip);
+	console.log(data);
 	//console.log(data.hip[0]);
 	//console.log(exerciseArray)
 

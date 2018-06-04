@@ -15,6 +15,22 @@
 					"sets":"3"
 				}
 			]
+		},
+		{
+			"day":"2",
+			"type":"strength",
+			"program":[
+				{
+					"exercise":"pull-ups",
+					"reps":"12",
+					"sets":"5",
+				},
+				{
+					"exercise":"situps",
+					"reps":"20",
+					"sets":"3"
+				}
+			]
 		}
 	]
 }
