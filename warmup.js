@@ -32,7 +32,7 @@ $("#add").click(function(){
 function seeTask(){
 	var taskObj = {};
 	taskObj.warmup = exerciseArray[0].warmup;
-	//console.log(taskObj.warmup);
+	console.log(taskObj.warmup);
 }
 
 function addTask(){
