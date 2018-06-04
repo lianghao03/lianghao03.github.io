@@ -6,7 +6,10 @@ var total= 0;
 	var exerciseArray = [];
 	
 $.getJSON("stuff.json", function(data){
-	exerciseArray = data.hip;
+	exerciseArray = data.hip[0];
+	console.log(data.hip);
+	console.log(data.hip[0]);
+	console.log(exerciseArray)
 
 	//console.log(data.exercises[0]);
 });
