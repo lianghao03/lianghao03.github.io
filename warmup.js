@@ -7,6 +7,7 @@ var total= 0;
 	
 $.getJSON("stuff.json", function(data){
 	exerciseArray = data;
+	console.log(data);
 	console.log(exerciseArray);
 });
 //For Enter key to add task
@@ -31,7 +32,7 @@ $("#add").click(function(){
 function seeTask(){
 	var taskObj = {};
 	taskObj.warmup = exerciseArray[0].warmup;
-	console.log(taskObj.warmup);
+	//console.log(taskObj.warmup);
 }
 
 function addTask(){
