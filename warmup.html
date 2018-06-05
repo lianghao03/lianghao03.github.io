@@ -23,38 +23,6 @@
 			<label for="task">Task:</label>
 				<input type="text" name="task" id="task">
 			</fieldset>
-<ul data-role="listview" data-inset="true" data-divider-theme="a">
-    <li data-role="list-divider">Warmup</li>
-    <li><a href="#">Static Stretch 3min</a></li>
-    <li><a href="#">Dynamic Stretch 12min</a></li>
-    <li data-role="list-divider">Drills</li>
-    <li><a href="#">Single leg cycle</a></li>
-    <li><a href="#">Work</a></li>
-</ul>
-<fieldset data-role="ui-field-priority">
-<label for="select-warmup">Warmup</label>
-<select name="warmup" id="warmup">
-<option value="1">speed</option>
-<option value="2">2</option>
-<option value="3">3</option>
-    </select>
-</fieldset>
-<fieldset data-role="ui-field-priority">
-<label for="select-drills">Drills</label>
-<select name="drills" id="drills">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-    </select>
-</fieldset>
-<fieldset data-role="ui-field-priority">
-<label for="select-workout">Workouts</label>
-<select name="workouts" id="workouts">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-    </select>
-</fieldset>
 
 
     <input id="add" type="button" value="Add warmup">
@@ -64,8 +32,9 @@
 	                <tr>
 	                  <th data-priority="1">No</th>
 	                  <th>Task</th>
-	                  <th data-priority="3">Priority</th>
-	                  <th data-priority="4">Done</th>
+	                  <th data-priority="3">Reps</th>
+	                  <th data-priority="4">Sets</th>
+	                  <th data-priority="5">Done</th>
 	                </tr>
 	              </thead>
 	              <tbody class="tasktable">
